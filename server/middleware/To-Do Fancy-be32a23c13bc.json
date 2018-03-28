@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "to-do-fancy",
+  "private_key_id": "be32a23c13bc104e1196dc338fb5eca34e6d3e51",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1JfyYWIL5DmTF\n0TEy2xF5o5pSwl+g7J63jX6/w43ZtzzZ7MWUpQvvxkRJg33ZLavCUxLJCShHEAB8\nLJ7vzXC7plJAZ4GozkNoCkW/ag8plMalFi0lqqXBIIX5ixTRzO04r9Z7xHOMY+9t\nHrbqA9T5Jp1WJMkz45hZEob/uJaOEvUur719C4ODUFmP6P0jtbRtt3tUXgAns5J9\nTNzfabKV+JC/8wZZqjD0QRbHD45kKRrk8FrHGXnTBdgeWXDO4hgcrsr91wx5xrvA\nMzVW3MrlA+1nTkH4L9WSIrgdx2mMNGqapT+Hb6ntn0xH46bghpZcnA85lD+apho9\naO4iRdz1AgMBAAECggEAGqTpN+FA9nATC3OfCGtncRxKvSSA21Mibz4dKAiT6zOD\n/EvSre/uxwhDEAsKrjCFBHKinzY9GeK1J46KnBv8GmW20GlJDXK1QG7OXn6zlzqe\nUzblUhZ9BeCKRC+cUtWRCNb4NcEp+7rRQxwS7G2+3By9ZKfJflvaEzPh7mgQoPnR\n7Hyx/hys0SoYAlpKrV1L1f6ME+swke2sX3ansB0QRJbI1b4pcN1d3GP4tAO7ilOt\nQk34jL+5/J1CCk+Do9q8oeqbvdt/YJP6Nrb5P32vbQSnhOdoUU2xbdZWQ2Eju1NK\nLIrtnMs6sopk+3MRoxTPLfmVFW7KIQyHRBYp4pBM8QKBgQD22wHbWFxrH9xT+0J5\nhiW9OyYTQLI6r0pko6G01M6ociMgUNoSaNovrj4kXDeNctvZhFCrY8b5bzUsD7Lc\nMckn6nTSzNO6FV6IQoelK7BQjwlQFN4FmJf8LB0v3wn68+PfM52m5MTjV7Sjx5aA\nppzNHdwvwhBEufpSWZ8A4LHfuQKBgQC729zFX5xBMrxtCVKGi8GfZB0ptSw0BpDt\nceh5MZXPmno+PWHSThZSraf8QdqocEDuMz6OKKm1sd/EEDPu/fE1cManMTt8CD5T\nXjHWnPKIJ1DEByMKd2o0Q4sFMR5dEWpwIelNq9jMx5OW1NUKjKd6iOQK40aJrlcv\n6Xy5piwtHQKBgQCszZDWMFu5rbr5mxjkoxCGEALOVWquhAjKvHU1dgcYiZWnSJHv\nczDRUeM0Zs2Img/mi6ZA4/7km4GYT4EAfWV4KLsQ2cuZJt5e+lukNxocupRlV8Y4\nGqLCJ0tjOHnvD43DsIk6zEg7cSkFwXDMrFV1jOKXF/11bs8ZmJ0i6yf5GQKBgQCA\nlVslle3kCpBCqdDc2ygqq2HyvFmHOr9UZ1VSLwh10yy9EVK1mlFZQhfraD/8buli\noZy9vUN8ZEXfc5+4hAToKUswAVjP6uyOL7k5RrATVaXIp4HqlhYRs/GiGh7IYTVT\nj0KbsXZxpGF3KjKwR9oS20QL18jeUIDJAK4ofH9cWQKBgAljcgZoPw2z8yaa5r9F\nKCKOR3WNepT7sSr5wFX+URu2YltEQCuZhXcbq4J1QB2SeSnOeXnBeawMb1ZAyJgQ\npWEodwV8dlCk7pTG/TfxiSB/v6J7FQwkxRlUvIjIgGzHuVq4SPWY2Rz1cS9oLr2T\nO6mvOo6cMwfoj0pFAE8Ct2uV\n-----END PRIVATE KEY-----\n",
+  "client_email": "adhiarta@to-do-fancy.iam.gserviceaccount.com",
+  "client_id": "108329540844869976782",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adhiarta%40to-do-fancy.iam.gserviceaccount.com"
+}
