@@ -22,13 +22,14 @@ export default new Router({
         }
       }
     }, {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: Home
     }, {
       path: '/cart',
       name: 'Cart',
-      component: Cart
+      component: Cart,
+      props: true
     }, {
       path: '/admin',
       name: 'Admin',

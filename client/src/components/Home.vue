@@ -1,5 +1,6 @@
 <template>
   <div>
+    <navbar :items='items' :cart='cart' :total='total'></navbar>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -26,21 +27,41 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <items :items='items' :cart="cart" :total='total'></items>
+    {{cart}}
+    <items :items='items' :cart='cart' :total='total'></items>
   </div>
 </template>
 
 <script>
 import Items from '@/components/Items'
+import Navbar from '@/components/Navbar'
+import axios from 'axios'
 export default {
-  props: ['items', 'cart', 'total'],
   name: 'Home',
   components: {
-    Items
+    Items,
+    Navbar
   },
   data () {
     return {
-      msg: 'Welcome to AEKI'
+      msg: 'Welcome to AEKI',
+      items: [],
+      cart: [],
+      total: 0
+    }
+  },
+  created () {
+    this.getData()
+  },
+  methods: {
+    getData: function () {
+      axios({
+        method: 'get',
+        url: 'http://localhost:3000/items'
+      }).then(({data}) => {
+        this.items = data.item
+        // console.log(data)
+      })
     }
   }
 }

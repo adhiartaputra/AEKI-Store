@@ -28,15 +28,15 @@
         <a href="" class="nav-link" id="navbarUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-shopping-basket fa-2x"></i><span class="badge badge-warning">{{cart.length}}</span></a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarUser">
-            <div class="dropdown-item" v-for='(item, index) in cart' :key=index>
+            <div class="dropdown-item">
               <div class="row">
                 <div class="col-sm-6">
-                  {{item.name}} ({{item.qty}})
+                  <p v-for='(item, index) in cart' :key=index>{{item.name}}</p>
                 </div>
               </div>
             </div>
             <div class="dropdown-divider"></div>
-            <router-link :to="{path: '/cart'}">Your Shopping Basket</router-link>
+            <router-link :to="{name: 'Cart', params: { items:items, cart:cart, total:total } }">Shopping Cart</router-link>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -55,21 +55,14 @@
 
 <script>
 export default {
-  props: ['items', 'cart', 'total'],
   name: 'Navbar',
+  props: ['items', 'cart', 'total'],
   data () {
-    return {
-      cart_on_nav: [],
-      total_on_nav: null
-    }
+    return {}
   },
   created () {
-    this.getItem()
   },
   methods: {
-    getItem () {
-      this.cart_on_nav.push(this.items)
-    },
     showCart () {
       this.$router.push('/cart')
     },
