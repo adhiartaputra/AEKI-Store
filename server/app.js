@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const axios = require('axios')
 const cors = require('cors')
+const multer = require('multer')
 require('dotenv').config()
 
 const login = require('./routes/login');

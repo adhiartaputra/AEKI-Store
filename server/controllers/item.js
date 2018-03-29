@@ -4,18 +4,17 @@ const jwt = require('jsonwebtoken');
 
 module.exports = {
   addItem: function (req, res) {
-    const { name, brand, price, description, image } = req.body
+    const { name, brand, price, description } = req.body
     // let token = req.headers.token
     // let decoded = jwt.verify(token, process.env.SECRET)
     // console.log(decoded);
-    console.log(req.body,'REQ BODY <<<<<<<<<<<');
     const newItem = new Item()
       // newItem.owner = decoded._id
       newItem.name = req.body.name
       newItem.brand = req.body.brand
       newItem.price = req.body.price
       newItem.description = req.body.description
-      newItem.image = req.body.image
+      newItem.image = req.file.imgUrl
       newItem.save().then(item => {
         res.status(201).json({
           message: 'Create new item success',
