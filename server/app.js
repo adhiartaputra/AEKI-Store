@@ -16,7 +16,8 @@ const items = require('./routes/items');
 const app = express();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/e-commerce', (err => {
+const dbUrl = `mongodb://just-to-do-it:12345@just-to-do-it-shard-00-00-grhoo.mongodb.net:27017,just-to-do-it-shard-00-01-grhoo.mongodb.net:27017,just-to-do-it-shard-00-02-grhoo.mongodb.net:27017/test?ssl=true&replicaSet=just-to-do-it-shard-0&authSource=admin`
+mongoose.connect(dbUrl, (err => {
   if(err) {
     console.log('failed to connect to database');
   } else {
