@@ -91,7 +91,7 @@ export default {
     verifyUser: function () {
       axios({
         method: 'post',
-        url: 'http://localhost:3000/login',
+        url: 'http://aeki-store.server.adhiarta.com/login',
         data: {
           email: this.email,
           password: this.password
