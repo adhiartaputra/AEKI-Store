@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "to-do-fancy",
+  "private_key_id": "b113af3078a7a9d7a8af9272cb1c3ccb56ca56d8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCggejfFzWtraJo\nbC5AjQZKS+7rh6h3ZPnoZoVr+/w2v8rKOHPg5NRIxE1WuVcI11nkDQov3Q/BE8pE\ntwZuyuOHy7/M0w3Z5ncjRcFIheFhWzUJZg81dEeeaxMK1JcrBjroICuqZiwQn1dY\nRc6xJI4lCy9Wk8CYkJ8o2H6/ZSMSEKWlENCtZg5pbjYsIjWenS77iMgb19rBSR7S\nqltvaV35YhhVhHkas3mUwK8YSiukQisk1LwcbLziEf67NxNUYWZ6druAu88EGP7F\n+QGed4KRdVDV8gQ03VnvWVZIUFbikyPN+9rffTALRFf3K/BI4vcouriSbRh4EQJT\nUQkRpPNJAgMBAAECggEAGJsx1xmYyhJnZnjHMnAsObGgZA08/2jEgyNMavyLct0+\nOngjE6QhAzLM5HGvbRSOnE5/dE0AgEoHZTdlzhBeh0/uDHmCkxgoxYiJFBQqNCGm\nZNV3mWtFG30wwyVKM3dWCoX8C7h0Iuw6mLbC9Bc1j2pCjJREH190du+Rpsfbc4ZJ\no3GOzHP+j4c6kB6Y9J+F3x54mFk0HMpzEVwF/2IwETMCFXM6iP4R1IqW8X6e2D0d\nLIV9lMkZInN7l901HLm9TzsRP8fGdiWVUhBlgdjHECanfGQ4Z6/EqVbX7mED6Ba1\nkd+FXTdjJTTTtZ3usWb0+UQ9THxzbGbgZjja65wrbQKBgQDPekbaRXFBhIPpmro8\n9cVQYAunZcPeM/qXCdDWtVVC/HtnOn3E8s8lFPjQAnP5/Rk8GN2tW/puzCHEfgXf\n04sZebDK4vS5wWSXA7cBa3EEa65QfyVD62cQfY49jntmRbazDEKQYHQq4wiQ+Ggw\nX1cgoVtzGIghNDpkSJn3FwqRVwKBgQDGC4UIRHexKIuPrJBhjltpVLiusRbNl4+c\nTRB4YlHiLr0TS3THXL99ezWGqq2LWNWt5y4eKQaNFZdm+TdKpBsFJkVAoM8ndJgI\nrPAkyGIfPEiaZDW8ItRgZkNu0WcCxwpqXzB7Raj51CzFiA+yyAxz45ruhOH8q6mm\nWIz/rBicXwKBgE5H7Wm3X7b/n6HJLlGHzW24/0ymmdNBu1+3ZWNNQaEnkAvvxrpD\nfqKYGhSpiEafFyFUpHcfSAr73BW+EstTjp0LDAhQv1NCw4gy756KgjbPxhI7Fr1c\nmSNgrAVPuAFrdjZx/r9olQwFYxsHjpAJuN7n4pA3hk043nst5WGUAPm7AoGAfTMV\nI9fc7xNZvzdxgyry4RDdPBrZ9pkFAeO6MNC/QUUY5NTD+7DHofU9LmhCFCDR3QGU\nJx76dECdGU0dxkMejc/W4feHXkMYRgvGOQqw9Vwv7eLCEbDXICYmJS2eeKQKEpsg\n1B2CqIWY1Dui6PwM20qdTIKXNxvywSWj5ZIPcPMCgYBiLSw3SQE4s2RmCNiSW+Zu\nR2+xJ1qOxVnChs5E0iqXuHbpJAAzRjYcWmEsZxLbK5c/qlPlL+Y98f56XA9k3hUs\nr0HNNVaNLocqpAOkTtaixvwcjeSLSGT4pw4TNzhh8JmpwCH/Xe8uT0goy4qJyWG1\nvT5MMK9a4uX09h/LmTwvBA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "adhiartaputra@to-do-fancy.iam.gserviceaccount.com",
+  "client_id": "112400765084582363481",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adhiartaputra%40to-do-fancy.iam.gserviceaccount.com"
+}

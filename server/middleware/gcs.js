@@ -2,22 +2,21 @@ const Storage = require('@google-cloud/storage');
 
 // TODO change immediately!
 const config = {
-  CLOUD_BUCKET: 'aeki.adhiarta.com',
+  CLOUD_BUCKET: 'jepretgram.adhiarta.com',
   PROJECT_ID: 'to-do-fancy'
 }
-
 // confirm service api
 const storage = Storage({
   projectId: config.PROJECT_ID,
-  keyFilename: 'To-Do Fancy-be32a23c13bc.json' // TODO change immediately!
+  keyFilename: 'aeki-b113af3078a7.json' // TODO change immediately!
 });
 
 function storageUrl (filename) {
+  console.log('masukk sini laggii')
   return `https://storage.googleapis.com/${config.CLOUD_BUCKET}/${filename}`;
 }
 
 // middleware
-
 function googleUpload (req, res, next) {
   const bucket = storage.bucket(config.CLOUD_BUCKET)
   if (!req.file) {
@@ -26,8 +25,8 @@ function googleUpload (req, res, next) {
   }
 
   let extension = req.file.originalname.split('.').pop();
-  const destination = `${req.body.facebookId}/`;
-  const uploadName = destination + Date.now() + '-AEKI.' + extension;
+  // const destination = `${req.body.id}/`;
+  const uploadName = Date.now() + '-aeki.' + extension;
   const file = bucket.file(uploadName);
 
   // streaming
@@ -57,7 +56,7 @@ function googleUpload (req, res, next) {
 
 function googleDelete (req, res, next) {
   // TODO change the bucket name
-  let extra = 'https://storage.googleapis.com/aeki.adhiarta.com/';
+  let extra = 'https://storage.googleapis.com/test-shop.teddydevstack.com/';
   const targetFile = req.toDelete.filePath.substr(extra.length);
   console.log(targetFile);
 

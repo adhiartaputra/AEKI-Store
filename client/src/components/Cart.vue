@@ -1,21 +1,14 @@
 <template>
-  <div class="container py-4">
-    <navbar></navbar>
+  <div>
+    <navbar :items='items' :cart='cart' :total='total'></navbar>
+    <div class="container py-4">
     <h2>
       Shopping Basket
     </h2>
     <div class="row">
-      <div class="col-sm-6 no-item" v-if='cart.length==0'>
-        <div class="media no-item">
-          <div class="media-body no-item">
-            <h5 class="mt-0">No item in directory</h5>
-            <p>please have what you need here!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6" v-if='cart.length!=0'>
+      <div class="col-sm-6">
         <div class="media item" v-for='(item, index) in cart' :key=index>
-          <img class="mr-3 item_image" :src="item.image" alt="item_image">
+          <img :src=item.image class="mr-3 item_image" alt="item_image">
           <div class="media-body">
             <h5 class="mt-0">{{item.name}}</h5>
             <p>{{item.description}}</p>
@@ -24,13 +17,13 @@
               <p class="item-qty"><button @click='decreaseQty(item)'>-</button> {{item.qty}}  <button @click='addQty(item)'>+</button></p>
               </div>
               <div class="col-sm-6 price">
-                $ {{item.price * item.qty}}
+                $ {{item.price}} + {{item.qty}}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6" v-if='cart.length != 0'>
+      <div class="col-sm-6">
         <div class="media checkout">
           <div class="media-body">
             <h5 class="mt-0">Total Item</h5>
@@ -53,7 +46,7 @@
                 {{item.qty}}
               </div>
               <div class="col-sm-3">
-                {{item.price * item.qty}}
+                {{item.price}} * {{item.qty}}
               </div>
             </div><br>
             <div class="row checkout-header">
@@ -84,20 +77,22 @@
         </div>
       </div>
     </div>
-    <P>HAHAHHAHAHA</P>
+
+    </div>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar'
 export default {
-  props: ['items', 'cart'],
   components: {
     Navbar
   },
+  props: ['items', 'cart', 'totals'],
   data () {
     return {
-      total: 0
+      // total: 0,
+      // cart: []
     }
   },
   methods: {

@@ -27,23 +27,21 @@ export default {
   name: 'Items',
   data () {
     return {
-      msg: 'Here\'s your Items',
-      recent_cart: [],
-      recent_total: null
+      msg: 'Here\'s your Items'
     }
   },
   methods: {
     addToCart (item) {
       alert(`Added ${item.name} into basket`)
-      for (let i = 0; i < this.recent_cart.length; i++) {
-        if (this.recent_cart[i].id === item.id) {
-          this.recent_cart[i].qty += item.qty
-          this.recent_cart[i].price += item.price
-          return ''
-        }
-      }
-      this.recent_cart.push(item)
-      this.recent_total += item.price
+      // for (let i = 0; i < this.cart.length; i++) {
+      //   if (this.cart[i].id === item.id) {
+      //     this.cart[i].qty += item.qty
+      //     this.cart[i].price += item.price
+      //     return ''
+      //   }
+      // }
+      this.cart.push(item)
+      this.total += item.price
     }
   }
 }
