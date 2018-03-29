@@ -42,7 +42,7 @@
 //   console.log('Successful login for: ' + response.name);
 //   console.log(response);
 //       localStorage.setItem('name', response.name)
-//       axios.post('http://localhost:3000/login', {
+//       axios.post('http://aeki-store.server.adhiarta.com/login', {
 //           idFB: response.id,
 //           email: response.email,
 //           fbToken: token.authResponse.accessToken,

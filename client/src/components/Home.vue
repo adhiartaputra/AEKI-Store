@@ -57,7 +57,7 @@ export default {
     getData: function () {
       axios({
         method: 'get',
-        url: 'http://localhost:3000/items'
+        url: 'http://aeki-store.server.adhiarta.com/items'
       }).then(({data}) => {
         this.items = data.item
         // console.log(data)
