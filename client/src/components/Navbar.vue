@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="dropdown-divider"></div>
-            <router-link :to="{name: 'Cart', params: { items:items, cart:cart, total:total } }">Shopping Cart</router-link>
+            <router-link :to="{name: 'Cart', params: { items:items, cart:cart, total:total } }"><a href="#" class="dropdown-item">Shopping Cart</a></router-link>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -45,7 +45,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarUser">
             <a href="#" class="dropdown-item">Profile</a>
             <div class="dropdown-divider"></div>
-            <div class="dropdown-item logout">Logout</div>
+            <a href="#" class="dropdown-item logout">Logout</a>
           </div>
       </li>
     </ul>

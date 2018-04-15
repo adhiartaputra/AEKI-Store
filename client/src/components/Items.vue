@@ -1,20 +1,27 @@
 <template>
 <div class="container py-4">
-  <h1>
-    HOT ITEMS AVAILABLE
-  </h1>
-  <div class="card-deck">
-    <div class="card" v-for='(item, index) in items' :key=index>
-      <img class="card-img-top" :src="item.image" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{item.name}}</h5>
-        <p class="card-text description">{{item.description}}</p>
-        <p class="card-text price">$ {{item.price}}</p>
-      </div>
-      <div class="card-footer">
-        <button class="btn btn-custom" @click='addToCart(item)'>
-          <i class="fas fa-shopping-basket fa-2x"></i>
-        </button>
+  <div class="row title">
+    <h1>
+      HOT ITEMS AVAILABLE
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-4 py-2" v-for='(item, index) in items' :key=index>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" :src="item.image" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text description">{{item.description}}</p>
+            <p class="card-text price">$ {{item.price}}</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-custom" @click='addToCart(item)'>
+              <i class="fas fa-shopping-basket fa-2x"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -49,10 +56,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-h1
+.title
 {
   padding: 3rem 3rem;
-  text-align: center;
+  justify-content: center;
 }
 .card
 {

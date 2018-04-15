@@ -27,7 +27,6 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    {{cart}}
     <items :items='items' :cart='cart' :total='total'></items>
   </div>
 </template>
